@@ -61,6 +61,8 @@ bool do_exec(int count, ...)
  *
 */
 
+	if(command[0][0] != '/') return false;
+
 	int status;
 
 	pid_t pid = fork();
